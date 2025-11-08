@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TawatchBackendApplication {
+public class TawatchApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TawatchBackendApplication.class, args);
+        SpringApplication.run(TawatchApplication.class, args);
     }
 
 }
