@@ -1,0 +1,31 @@
+# ==========================================
+# Tawatch Backend Configuration (Template)
+# ==========================================
+# Example configuration file.
+# Copy this file to create environment-specific configs:
+#   - application-local.yaml  (local development)
+#   - application-docker.yaml (docker environment)
+# Do NOT commit real environment files with secrets.
+
+# === Spring Application ===
+spring:
+  application:
+    name: ${APP_NAME:tawatch}       # App name (default: tawatch)
+
+  # Active Spring profile.
+  # Change this to match the environment-specific file:
+  #   application-local.yaml → local
+  #   application-docker.yaml → docker
+  config:
+    activate:
+      on-profile: local
+
+# === Server Configuration ===
+server:
+  port: ${SERVER_PORT:8080}        # HTTP server port (default: 8080)
+  servlet:
+    context-path: ${SERVER_CONTEXT_PATH:/api/tawatch}  # Base path for API (default: /api/tawatch)
+    encoding:
+      charset: UTF-8               # Encoding charset
+      enabled: true                # Enable encoding
+      force: true                  # Force UTF-8 encoding
