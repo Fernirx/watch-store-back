@@ -169,7 +169,7 @@ mvn clean install
 mvn spring-boot:run -pl tawatch-starter -Dspring-boot.run.profiles=local
 ```
 
-The API will be available at: [http://localhost:8080](http://localhost:8080) (default `{HOST}:{PORT}`).
+The API will be available at: [http://localhost:8080/api/tawatch](http://localhost:8080/api/tawatch).
 
 ---
 
@@ -225,8 +225,8 @@ Additional helper scripts are provided for convenience:
 
 Once the application is running:
 
-* **Swagger UI:** [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html) (default `{HOST}:{PORT}`)
-* **Health Check:** [http://localhost:8080/actuator/health](http://localhost:8080/actuator/health) (default `{HOST}:{PORT}`)
+* **Swagger UI:** [http://localhost:8080/api/tawatch/swagger-ui/index.html](http://localhost:8080/api/tawatch/swagger-ui/index.html).
+* **Health Check:** [http://localhost:8080/api/tawatch/actuator/health](http://localhost:8080/api/tawatch/actuator/health).
 
 ---
 
@@ -274,8 +274,8 @@ Sensitive endpoints can be protected under restricted access for safety.
 
 Interactive API documentation is available via Swagger UI:
 
-* **Swagger UI:** [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
-* **OpenAPI JSON/YAML:** [http://localhost:8080/v3/api-docs](http://localhost:8080/v3/api-docs)
+* **Swagger UI:** [http://localhost:8080/api/tawatch/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
+* **OpenAPI JSON/YAML:** [http://localhost:8080/api/tawatch/v3/api-docs](http://localhost:8080/v3/api-docs)
 
 OpenAPI specification is automatically generated and updated at runtime.
 
