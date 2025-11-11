@@ -40,6 +40,10 @@
 
         <!-- Spring Boot version -->
         <spring-boot.version>3.5.7</spring-boot.version>
+        <springdoc.version>2.8.14</springdoc.version>
+
+        <!-- Commons Lang3 version: >=3.18.0 fixes CVE-2025-48924 -->
+        <commons.lang3.version>3.18.0</commons.lang3.version>
 
         <!-- Encoding -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -66,6 +70,20 @@
                 <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <!-- Spring Doc -->
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+                <version>${springdoc.version}</version>
+            </dependency>
+
+            <!-- Commons Lang3: override old versions to fix CVE-2025-48924 -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons.lang3.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
