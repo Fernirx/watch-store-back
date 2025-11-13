@@ -12,8 +12,6 @@ LICENSE
 # Real environment configs
 .env
 application.example.yml
-application-local.yml
-application-local.yaml
 
 # Maven
 target/
