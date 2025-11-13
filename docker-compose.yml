@@ -1,0 +1,24 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ${APP_NAME}
+    ports:
+      - "${HOST_PORT}:${SERVER_PORT}"
+    environment:
+      # ==== PORTS ===
+      SERVER_PORT: ${SERVER_PORT}
+
+      # === Application Settings ===
+      APP_NAME: ${APP_NAME}
+      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES_ACTIVE}
+
+      # === Server Configuration ===
+      SERVER_CONTEXT_PATH: ${SERVER_CONTEXT_PATH}
+
+    networks:
+      - tawatch-net
+
+networks:
+  tawatch-net:
