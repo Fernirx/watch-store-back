@@ -18,6 +18,7 @@ Provides essential functionality for managing products, orders, customers, payme
 * [Project Structure](#project-structure)
 * [Modules](#modules)
 * [Profiles & Configuration](#profiles--configuration)
+* [Environment Variables](#environment-variables)
 * [Run & Build](#run--build)
 * [Testing](#testing)
 * [Security & Health](#security--health)
@@ -127,9 +128,23 @@ Create environment-specific config files from the example:
 
 The base `application.yml` only contains the active profile selector.
 
-Each profile supports variable substitution from the `.env.example` file  
-(for example, `DB_HOST`, `DB_PORT`, `SERVER_PORT`, etc.).  
+Each profile supports variable substitution from the `.env.example` file
+(for example, `DB_HOST`, `DB_PORT`, `SERVER_PORT`, etc.).
 Developers should create a real `.env` file based on `.env.example` when running locally or in CI/CD.
+
+---
+
+## Environment Variables
+
+The `.env` file (created from `.env.example`) contains the following configuration:
+
+| Variable                 | Description                      | Default Value  |
+|--------------------------|----------------------------------|----------------|
+| `HOST_PORT`              | Port exposed on host machine     | `8080`         |
+| `SERVER_PORT`            | Internal application server port | `8080`         |
+| `APP_NAME`               | Application name identifier      | `tawatch`      |
+| `SPRING_PROFILES_ACTIVE` | Active Spring profile            | `docker`       |
+| `SERVER_CONTEXT_PATH`    | API base context path            | `/api/tawatch` |
 
 ---
 
