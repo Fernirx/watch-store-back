@@ -116,7 +116,7 @@ DB_PASSWORD=my_secure_password
 
 ### Changing API Base Path
 
-####  Linux/macOS
+#### Linux/macOS
 ```bash
 nano .env
 
@@ -214,7 +214,6 @@ docker compose down -v  # ⚠️ This deletes existing data
 
 | File               | Linux/macOS                             | Windows                                 |
 |--------------------|-----------------------------------------|-----------------------------------------|
-| Environment        | `./.env`                                | `.\\.env`                               |
+| Environment        | `./.env`                                | `.\.env`                                |
 | Docker Compose     | `./docker-compose.yml`                  | `.\docker-compose.yml`                  |
 | Application Config | `./tawatch-starter/src/main/resources/` | `.\tawatch-starter\src\main\resources\` |
-```
