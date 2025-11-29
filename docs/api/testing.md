@@ -211,9 +211,12 @@ http GET localhost:8080/api/tawatch/products \
 ```bash
 http POST localhost:8080/api/tawatch/products \
   Authorization:"Bearer <token>" \
-  name="Omega Speedmaster" \
-  price:=6500.00 \
-  category="LUXURY"
+  Content-Type:application/json \
+  <<<'{
+    "name": "Omega Speedmaster",
+    "price": 6500.00,
+    "category": "LUXURY"
+  }'
 ```
 
 HTTPie automatically:
@@ -285,6 +288,7 @@ curl "http://localhost:8080/api/tawatch/products?sort=category,asc&sort=price,de
 ```bash
 # Send invalid data
 curl -X POST "http://localhost:8080/api/tawatch/products" \
+  -H "Authorization: Bearer <token>" \
   -H "Content-Type: application/json" \
   -d '{
     "name": "",
