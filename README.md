@@ -41,7 +41,7 @@ Tawatch Backend is a comprehensive Spring Boot application designed to power mod
 * **Order Processing:** Cart management, order status tracking, order history
 * **Customer Management:** User profiles, address book, order history
 * **Payment Integration:** Support for COD, Momo
-* **Role-based Access Control:** Admin, Customer, Manager roles with specific permissions
+* **Role-based Access Control:** Three-tier role system (User, Staff, Admin) with specific permissions
 
 **Supporting Features:**
 * Docker support for easy deployment
@@ -108,7 +108,7 @@ Comprehensive documentation is available in the `docs/` directory:
 * **[Configuration](docs/setup/configuration.md)** - Environment setup and profiles
 * **[Development](docs/development/development-guide.md)** - Project structure and development workflow
 * **[API Documentation](docs/api/overview.md)** - Swagger UI and API usage
-* **[Security](docs/security/security.md)** - Authentication and authorization
+* **[Authentication](docs/api/authentication.md)** - Authentication and authorization
 
 ---
 
