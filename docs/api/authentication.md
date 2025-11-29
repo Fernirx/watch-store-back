@@ -48,7 +48,7 @@ Content-Type: application/json
       "id": 123,
       "username": "hung",
       "email": "hung@gmail.com",
-      "roles": ["ADMIN", "STUDENT"]
+      "roles": ["ADMIN"]
     }
   },
   "timestamp": "2024-01-15T10:30:00Z"
