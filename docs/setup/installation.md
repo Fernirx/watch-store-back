@@ -290,7 +290,7 @@ cd /path/to/tawatch-backend/bin/linux
 docker compose ps  # This will fail!
 ```
 
-----
+---
 
 ### Port Already in Use
 
