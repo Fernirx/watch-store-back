@@ -100,7 +100,7 @@ The module uses Spring profiles to separate environments:
 * `docker` – For Dockerized deployment.
 
 Profile-specific configuration files are stored alongside `application.yaml`.
-Refer to the [parent project README](../README.md#profiles--configuration) for details.
+Refer to the [Configuration Guide](../docs/setup/configuration.md) for details.
 
 ---
 
